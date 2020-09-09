@@ -1,0 +1,196 @@
+2020-09-08 14:16:59,300 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 14:32:11,713 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 14:34:15,886 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 14:35:18,669 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 15:39:24,961 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 15:39:36,446 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 16:02:57,214 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 16:03:06,143 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 16:03:06,239 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 16:03:38,489 [main] INFO verifying selected flight - Scenario Failed - Coudn't attach screenshot
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=85.0.4183.83)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.03 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0I2DGSC', ip: '192.168.31.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\ADVANT~1\AppData\Local\Temp\scoped_dir388_24521}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.83, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 1c34eb5ef4c48a335a1ed144cd250d76
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at com.blazedemo.blazedemo.stepdefs.beforeAndAfterHooks.embedScreenshot(beforeAndAfterHooks.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:35)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.runChild(ExtendedExamplesRunner.java:102)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.runChild(ExtendedExamplesRunner.java:19)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.run(ExtendedExamplesRunner.java:87)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.runChild(ExtendedScenarioOutlineRunner.java:69)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.runChild(ExtendedScenarioOutlineRunner.java:17)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.run(ExtendedScenarioOutlineRunner.java:64)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:111)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:30)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:151)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+2020-09-08 16:08:32,516 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 16:09:16,109 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 16:09:16,341 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 16:09:22,361 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 16:09:22,369 [main] INFO verifying selected flight - Driver closed
+2020-09-08 18:10:43,554 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 18:11:54,340 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 18:13:35,737 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 18:14:44,814 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 18:16:53,895 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 18:17:25,734 [main] INFO verifying selected flight - Scenario Failed - Coudn't attach screenshot
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=85.0.4183.83)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.03 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0I2DGSC', ip: '192.168.31.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\ADVANT~1\AppData\Local\Temp\scoped_dir19680_29444}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.83, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 203837433dd4bee35a7754805a927fee
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at com.blazedemo.blazedemo.stepdefs.beforeAndAfterHooks.embedScreenshot(beforeAndAfterHooks.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:35)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.runChild(ExtendedExamplesRunner.java:102)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.runChild(ExtendedExamplesRunner.java:19)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExamplesRunner.run(ExtendedExamplesRunner.java:87)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.runChild(ExtendedScenarioOutlineRunner.java:69)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.runChild(ExtendedScenarioOutlineRunner.java:17)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedScenarioOutlineRunner.run(ExtendedScenarioOutlineRunner.java:64)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:111)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:30)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:151)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+2020-09-08 18:38:41,622 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 18:39:49,359 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 18:42:04,671 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 18:42:11,085 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 18:42:11,097 [main] INFO verifying selected flight - Driver closed
+2020-09-08 18:57:29,432 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 18:58:41,157 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 19:00:55,236 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 19:01:03,351 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 19:01:03,368 [main] INFO verifying selected flight - Driver closed
+2020-09-08 19:54:26,077 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 19:56:09,532 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 19:57:01,166 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 19:57:07,386 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 19:57:07,396 [main] INFO verifying selected flight - Driver closed
+2020-09-08 20:12:13,759 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 20:13:25,920 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 20:13:32,503 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 20:13:32,515 [main] INFO verifying selected flight - Driver closed
+2020-09-08 20:13:33,923 [main] INFO verifying flight booked - Test Data Flag - SELF
+2020-09-08 20:18:33,518 [main] INFO verifying flights details display - Test Data Flag - SELF
+2020-09-08 20:20:14,185 [main] INFO verifying selected flight - Test Data Flag - SELF
+2020-09-08 20:20:20,117 [main] INFO verifying selected flight - Screen Shot Attached
+2020-09-08 20:20:20,124 [main] INFO verifying selected flight - Driver closed
+2020-09-08 20:20:21,780 [main] INFO verifying flight booked - Test Data Flag - SELF

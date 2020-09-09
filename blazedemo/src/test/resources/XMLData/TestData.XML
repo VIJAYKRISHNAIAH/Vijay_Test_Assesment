@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Project>
+	<Test_Suite>
+		<Test_Case id="To feed data into fields ,can use XML way">
+			
+		</Test_Case>
+		
+		
+	</Test_Suite>
+</Project>

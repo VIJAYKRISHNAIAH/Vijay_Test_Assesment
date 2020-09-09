@@ -1,0 +1,20 @@
+[
+  {
+    "source": "^Application url$",
+    "steps": [
+      {
+        "name": "Application url",
+        "aggregatedDurations": {
+          "average": 23.577861,
+          "median": 23.577861
+        },
+        "durations": [
+          {
+            "duration": 23.577861,
+            "location": "001destinationSelection.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]

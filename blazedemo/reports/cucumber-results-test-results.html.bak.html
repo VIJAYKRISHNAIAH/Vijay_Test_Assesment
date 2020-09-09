@@ -1,0 +1,66 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+ol a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+</style>
+<title>Detailed Results Report</title>
+  </head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview</h1>
+<table><tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>%Passed</th></tr><tr><th>Features</th><td class="passed">0</td><td class="failed">1</td><td class="known">0</td><td class="undefined">2</td><td>0.00</td></tr><tr><th>Scenarios</th><td class="passed">0</td><td class="failed">1</td><td class="known">0</td><td class="undefined">2</td><td>0.00</td></tr><tr><th>Steps</th><td class="passed">1</td><td class="failed">1</td><td class="known">0</td><td class="undefined">15</td><td>5.88</td></tr></table><div><b>Overall Duration: 0h 04m 01s</b></div>
+<a id="top"></a><h1>Table of Contents</h1><ol><li> <span class="undefined"><a href="#feature-1to-verify-finding-flights-based-on-departure-and-destination-selection">To verify Finding flights based on departure and destination selection</a></span><ol><li> <span class="undefined"><a href="#sc-13-to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;;2">verifying flights details display</a></span></li></ol></li><li> <span class="failed"><a href="#feature-1to-verify-selection-of-flight-based-on-available-flights">To verify Selection of flight based on available flights</a></span><ol><li> <span class="failed"><a href="#sc-12-to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;;2">verifying selected flight</a></span></li></ol></li><li> <span class="undefined"><a href="#feature-1to-verify-flight-booking">To verify flight booking</a></span><ol><li> <span class="undefined"><a href="#sc-21-to-verify-flight-booking;verifying-flight-booked;;2">verifying flight booked</a></span></li></ol></li></ol><h1>Detailed Results Report</h1><table width="700px"><tr class="undefined"><td colspan="4"><b>Feature:</b> <a id="feature-1to-verify-finding-flights-based-on-departure-and-destination-selection">To verify Finding flights based on departure and destination selection</a></td></tr><tr class="undefined"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 1</small></td><td><small>Duration: 100.89s</small></td></tr><tr class="undefined"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="undefined"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-13-to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;;2">verifying flights details display</a></td></tr><tr class="undefined"><td><small><b>Passed:</b> 1</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 3</small></td><td><small>Duration: 100.89s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.35s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr class="undefined"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>Given </b> Application url</td><td width="100">23.58s</td></tr><tr class="pending"><td><b>Then </b> I Enter the &quot;Paris&quot;</td><td width="100">76.96s</td></tr><tr class="skipped"><td><b>Then </b> Enter the &quot;New York&quot;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I click on Find Flights and Verify flights displayed</td><td width="100">0.00s</td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.00s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr><tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1to-verify-selection-of-flight-based-on-available-flights">To verify Selection of flight based on available flights</a></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 1</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 7.52s</small></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-12-to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;;2">verifying selected flight</a></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 1</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 7.52s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.01s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td><b>Then </b> I Select the Flight</td><td width="100">5.46s</td></tr><tr class="failed"><td colspan="2"><div><br>java.lang.NullPointerException</br><br>
+	at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)</br><br>
+	at &#10045;.Then I Select the Flight(002flightSelection.feature:7)</br><br>
+</br></div></td></tr><tr class="failed"><td colspan="2" class="comment"><span class="tip">Output</span><pre class="comment">URL at failure: data:,
+</pre></td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">2.05s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr><tr class="undefined"><td colspan="4"><b>Feature:</b> <a id="feature-1to-verify-flight-booking">To verify flight booking</a></td></tr><tr class="undefined"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 1</small></td><td><small>Duration: 133.42s</small></td></tr><tr class="undefined"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="undefined"><td colspan="4"><b>Scenario Outline:</b> <a id="sc-21-to-verify-flight-booking;verifying-flight-booked;;2">verifying flight booked</a></td></tr><tr class="undefined"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 12</small></td><td><small>Duration: 133.42s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.02s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr class="undefined"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="pending"><td><b>Then </b> I enter &lt;&quot;name&quot;&gt;</td><td width="100">133.40s</td></tr><tr class="skipped"><td><b>Then </b> enter &lt;&quot;address&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter the &lt;&quot;city&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter th &lt;&quot;state&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> enter the field &lt;&quot;zipcode&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter the card &lt;&quot;CardType&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter the credit&lt;&quot;creditcardnumber&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter the month&lt;&quot;month&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter the year &lt;&quot;year&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I enter nameoncard &lt;&quot;nameoncard&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I select &lt;&quot;RememberMe&quot;&gt;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I Book the Flight</td><td width="100">0.00s</td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.00s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr></table>
+	</body>
+</html>

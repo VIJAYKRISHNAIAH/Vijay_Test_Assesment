@@ -1,0 +1,71 @@
+Feature: To verify Finding flights based on departure and destination selection
+
+  #Test case 1-2
+  Scenario Outline: verifying flights details display         [90m# 001destinationSelection.feature:4[0m
+    [36mGiven [0m[36mApplication url[0m
+    [36mThen [0m[36mI Enter the "<departure_city>"[0m
+    [36mThen [0m[36mEnter the "<destination_city>"[0m
+    [36mThen [0m[36mI click on Find Flights and Verify flights displayed[0m
+
+    Examples: 
+
+  Scenario Outline: verifying flights details display         [90m# 001destinationSelection.feature:13[0m
+    [32mGiven [0m[32mApplication url[0m                                     [90m# destinationSelection.application_url()[0m
+    [33mThen [0m[33mI Enter the "[0m[33m[1mParis[0m[33m"[0m                                  [90m# destinationSelection.i_Enter_the(String)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Enter_the(destinationSelection.java:40)
+      	at ✽.Then I Enter the "Paris"(001destinationSelection.feature:7)
+      [0m
+    [36mThen [0m[36mEnter the "[0m[36m[1mNew York[0m[36m"[0m                                 [90m# destinationSelection.enter_the(String)[0m
+    [36mThen [0m[36mI click on Find Flights and Verify flights displayed[0m [90m# destinationSelection.i_click_on_Find_Flights()[0m
+Feature: To verify Selection of flight based on available flights
+
+  #Test case 3-4
+  Scenario Outline: verifying selected flight [90m# 002flightSelection.feature:4[0m
+    [36mThen [0m[36mI Select the Flight[0m
+
+    Examples: 
+[34mURL at failure: data:,[0m
+
+  Scenario Outline: verifying selected flight [90m# 002flightSelection.feature:12[0m
+    [31mThen [0m[31mI Select the Flight[0m                  [90m# flightSelection.i_Select_the_Flight()[0m
+      [31mjava.lang.NullPointerException
+      	at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)
+      	at ✽.Then I Select the Flight(002flightSelection.feature:7)
+      [0m
+Feature: To verify flight booking
+
+  #Test case 5-6
+  Scenario Outline: verifying flight booked     [90m# 003flightBooking.feature:4[0m
+    [36mThen [0m[36mI enter <"name">[0m
+    [36mThen [0m[36menter <"address">[0m
+    [36mThen [0m[36mI enter the <"city">[0m
+    [36mThen [0m[36mI enter th <"state">[0m
+    [36mThen [0m[36menter the field <"zipcode">[0m
+    [36mThen [0m[36mI enter the card <"CardType">[0m
+    [36mThen [0m[36mI enter the credit<"creditcardnumber">[0m
+    [36mThen [0m[36mI enter the month<"month">[0m
+    [36mThen [0m[36mI enter the year <"year">[0m
+    [36mThen [0m[36mI enter nameoncard <"nameoncard">[0m
+    [36mThen [0m[36mI select <"RememberMe">[0m
+    [36mThen [0m[36mI Book the Flight[0m
+
+    Examples: 
+
+  Scenario Outline: verifying flight booked     [90m# 003flightBooking.feature:21[0m
+    [33mThen [0m[33mI enter <"[0m[33m[1mname[0m[33m">[0m                       [90m# flightBookings.i_enter(String)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at com.blazedemo.blazedemo.stepdefs.flightBookings.i_enter(flightBookings.java:19)
+      	at ✽.Then I enter <"name">(003flightBooking.feature:7)
+      [0m
+    [36mThen [0m[36menter <"[0m[36m[1maddress[0m[36m">[0m                      [90m# flightBookings.enter(String)[0m
+    [36mThen [0m[36mI enter the <"[0m[36m[1mcity[0m[36m">[0m                   [90m# flightBookings.i_enter_the(String)[0m
+    [36mThen [0m[36mI enter th <"[0m[36m[1mstate[0m[36m">[0m                   [90m# flightBookings.i_enter_th(String)[0m
+    [36mThen [0m[36menter the field <"[0m[36m[1mzipcode[0m[36m">[0m            [90m# flightBookings.enter_the_field(String)[0m
+    [36mThen [0m[36mI enter the card <"[0m[36m[1mCardType[0m[36m">[0m          [90m# flightBookings.i_enter_the_card(String)[0m
+    [36mThen [0m[36mI enter the credit<"[0m[36m[1mcreditcardnumber[0m[36m">[0m [90m# flightBookings.i_enter_the_credit(String)[0m
+    [36mThen [0m[36mI enter the month<"[0m[36m[1mmonth[0m[36m">[0m             [90m# flightBookings.i_enter_the_month(String)[0m
+    [36mThen [0m[36mI enter the year <"[0m[36m[1myear[0m[36m">[0m              [90m# flightBookings.i_enter_the_year(String)[0m
+    [36mThen [0m[36mI enter nameoncard <"[0m[36m[1mnameoncard[0m[36m">[0m      [90m# flightBookings.i_enter_nameoncard(String)[0m
+    [36mThen [0m[36mI select <"[0m[36m[1mRememberMe[0m[36m">[0m                [90m# flightBookings.i_select(String)[0m
+    [36mThen [0m[36mI Book the Flight[0m                      [90m# flightBookings.i_Book_the_Flight()[0m

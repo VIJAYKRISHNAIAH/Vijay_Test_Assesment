@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="3" time="241.832901">
+<testcase classname="To verify Finding flights based on departure and destination selection" name="verifying flights details display" time="100.890791">
+<skipped><![CDATA[Given Application url.......................................................passed
+Then I Enter the "Paris"....................................................pending
+Then Enter the "New York"...................................................skipped
+Then I click on Find Flights and Verify flights displayed...................skipped
+]]></skipped>
+</testcase>
+<testcase classname="To verify Selection of flight based on available flights" name="verifying selected flight" time="7.52319">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)&#13;&#10;&#9;at ✽.Then I Select the Flight(002flightSelection.feature:7)&#13;&#10;"><![CDATA[Then I Select the Flight....................................................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)
+	at ✽.Then I Select the Flight(002flightSelection.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="To verify flight booking" name="verifying flight booked" time="133.41892">
+<skipped><![CDATA[Then I enter <"name">.......................................................pending
+Then enter <"address">......................................................skipped
+Then I enter the <"city">...................................................skipped
+Then I enter th <"state">...................................................skipped
+Then enter the field <"zipcode">............................................skipped
+Then I enter the card <"CardType">..........................................skipped
+Then I enter the credit<"creditcardnumber">.................................skipped
+Then I enter the month<"month">.............................................skipped
+Then I enter the year <"year">..............................................skipped
+Then I enter nameoncard <"nameoncard">......................................skipped
+Then I select <"RememberMe">................................................skipped
+Then I Book the Flight......................................................skipped
+]]></skipped>
+</testcase>
+</testsuite>
