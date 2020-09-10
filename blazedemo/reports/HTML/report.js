@@ -27,21 +27,86 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I Enter the \"\u003cdeparture_city\u003e\"",
+  "name": "I Enter the departure city \"\u003cdeparture_city\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "Enter the \"\u003cdestination_city\u003e\"",
+  "name": "Enter the destination city \"\u003cdestination_city\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "I click on Find Flights and Verify flights displayed",
+  "name": "I click on Find Flight button and Verify flights displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I Select the Flight for from to To",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "I enter name \"\u003cname\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "enter address \"\u003caddress\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "I enter the city \"\u003ccity\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "I enter the state \"\u003cstate\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "enter the zipcode \"\u003czipcode\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "I enter the cardtype \"\u003cCardType\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "I enter the creditcardno \"\u003ccreditcardnumber\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "I enter the month \"\u003cmonth\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "I enter the year \"\u003cyear\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "I enter nameoncard \"\u003cnameoncard\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "I check rememberme\"\u003cRememberMe\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "I Book Flight",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 11,
+  "line": 24,
   "name": "",
   "description": "",
   "id": "to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;",
@@ -49,28 +114,50 @@ formatter.examples({
     {
       "cells": [
         "departure_city",
-        "destination_city"
+        "destination_city",
+        "name",
+        "address",
+        "city",
+        "state",
+        "zipcode",
+        "CardType",
+        "creditcardnumber",
+        "month",
+        "year",
+        "nameoncard",
+        "RememberMe"
       ],
-      "line": 12,
+      "line": 25,
       "id": "to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;;1"
     },
     {
       "cells": [
         "Paris",
-        "New York"
+        "New York",
+        "sherlock",
+        "new york street",
+        "new york",
+        "new york",
+        "12345",
+        "Visa",
+        "54321",
+        "09",
+        "2021",
+        "Sherlockhome",
+        "Yes"
       ],
-      "line": 13,
+      "line": 26,
       "id": "to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 352251600,
+  "duration": 155688200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 26,
   "name": "verifying flights details display",
   "description": "",
   "id": "to-verify-finding-flights-based-on-departure-and-destination-selection;verifying-flights-details-display;;2",
@@ -84,7 +171,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I Enter the \"Paris\"",
+  "name": "I Enter the departure city \"Paris\"",
   "matchedColumns": [
     0
   ],
@@ -92,7 +179,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "Enter the \"New York\"",
+  "name": "Enter the destination city \"New York\"",
   "matchedColumns": [
     1
   ],
@@ -100,469 +187,308 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "I click on Find Flights and Verify flights displayed",
+  "name": "I click on Find Flight button and Verify flights displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I Select the Flight for from to To",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "I enter name \"sherlock\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "enter address \"new york street\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "I enter the city \"new york\"",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "I enter the state \"new york\"",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "enter the zipcode \"12345\"",
+  "matchedColumns": [
+    6
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "I enter the cardtype \"Visa\"",
+  "matchedColumns": [
+    7
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "I enter the creditcardno \"54321\"",
+  "matchedColumns": [
+    8
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "I enter the month \"09\"",
+  "matchedColumns": [
+    9
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "I enter the year \"2021\"",
+  "matchedColumns": [
+    10
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "I enter nameoncard \"Sherlockhome\"",
+  "matchedColumns": [
+    11
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "I check rememberme\"Yes\"",
+  "matchedColumns": [
+    12
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "I Book Flight",
   "keyword": "Then "
 });
 formatter.match({
   "location": "destinationSelection.application_url()"
 });
 formatter.result({
-  "duration": 23577861000,
+  "duration": 28551643300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Paris",
-      "offset": 13
+      "offset": 28
     }
   ],
-  "location": "destinationSelection.i_Enter_the(String)"
+  "location": "destinationSelection.i_Enter_the_departure_city(String)"
 });
 formatter.result({
-  "duration": 76960219000,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Enter_the(destinationSelection.java:40)\r\n\tat ✽.Then I Enter the \"Paris\"(001destinationSelection.feature:7)\r\n",
-  "status": "pending"
+  "duration": 148290700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "New York",
-      "offset": 11
+      "offset": 28
     }
   ],
-  "location": "destinationSelection.enter_the(String)"
+  "location": "destinationSelection.enter_the_destination_city(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 120237800,
+  "status": "passed"
 });
 formatter.match({
-  "location": "destinationSelection.i_click_on_Find_Flights()"
+  "location": "destinationSelection.i_click_on_Find_Flight_button_and_Verify_flights_displayed()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 459700,
+  "duration": 1030071900,
   "status": "passed"
-});
-formatter.uri("002flightSelection.feature");
-formatter.feature({
-  "line": 1,
-  "name": "To verify Selection of flight based on available flights",
-  "description": "",
-  "id": "to-verify-selection-of-flight-based-on-available-flights",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Test case 3-4"
-    }
-  ],
-  "line": 4,
-  "name": "verifying selected flight",
-  "description": "",
-  "id": "to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "I Select the Flight",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 10,
-  "name": "",
-  "description": "",
-  "id": "to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;",
-  "rows": [
-    {
-      "cells": [
-        "FlightNO"
-      ],
-      "line": 11,
-      "id": "to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;;1"
-    },
-    {
-      "cells": [
-        "43"
-      ],
-      "line": 12,
-      "id": "to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 10164300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 12,
-  "name": "verifying selected flight",
-  "description": "",
-  "id": "to-verify-selection-of-flight-based-on-available-flights;verifying-selected-flight;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "I Select the Flight",
-  "keyword": "Then "
 });
 formatter.match({
-  "location": "flightSelection.i_Select_the_Flight()"
+  "location": "destinationSelection.i_Select_the_Flight_for_from_to_To()"
 });
 formatter.result({
-  "duration": 5462160500,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)\r\n\tat ✽.Then I Select the Flight(002flightSelection.feature:7)\r\n",
-  "status": "failed"
-});
-formatter.write("URL at failure: data:,");
-formatter.after({
-  "duration": 2050865600,
+  "duration": 2724605900,
   "status": "passed"
-});
-formatter.uri("003flightBooking.feature");
-formatter.feature({
-  "line": 1,
-  "name": "To verify flight booking",
-  "description": "",
-  "id": "to-verify-flight-booking",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Test case 5-6"
-    }
-  ],
-  "line": 4,
-  "name": "verifying flight booked",
-  "description": "",
-  "id": "to-verify-flight-booking;verifying-flight-booked",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "I enter \u003c\"name\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter \u003c\"address\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "I enter the \u003c\"city\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "I enter th \u003c\"state\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "enter the field \u003c\"zipcode\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter the card \u003c\"CardType\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I enter the credit\u003c\"creditcardnumber\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "I enter the month\u003c\"month\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "I enter the year \u003c\"year\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "I enter nameoncard \u003c\"nameoncard\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "I select \u003c\"RememberMe\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "I Book the Flight",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 19,
-  "name": "",
-  "description": "",
-  "id": "to-verify-flight-booking;verifying-flight-booked;",
-  "rows": [
-    {
-      "cells": [
-        "name",
-        "address",
-        "city",
-        "state",
-        "zipcode",
-        "CardType",
-        "creditcardnumber",
-        "month",
-        "yearnameoncard",
-        "RememberMe"
-      ],
-      "line": 20,
-      "id": "to-verify-flight-booking;verifying-flight-booked;;1"
-    },
-    {
-      "cells": [
-        "43",
-        "new york street",
-        "new york",
-        "new york",
-        "12345",
-        "Visa",
-        "54321",
-        "09",
-        "2021",
-        "Yes"
-      ],
-      "line": 21,
-      "id": "to-verify-flight-booking;verifying-flight-booked;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 17220700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "verifying flight booked",
-  "description": "",
-  "id": "to-verify-flight-booking;verifying-flight-booked;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "I enter \u003c\"name\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter \u003c\"address\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "I enter the \u003c\"city\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "I enter th \u003c\"state\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "enter the field \u003c\"zipcode\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter the card \u003c\"CardType\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I enter the credit\u003c\"creditcardnumber\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "I enter the month\u003c\"month\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "I enter the year \u003c\"year\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "I enter nameoncard \u003c\"nameoncard\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "I select \u003c\"RememberMe\"\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "I Book the Flight",
-  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "name",
-      "offset": 10
-    }
-  ],
-  "location": "flightBookings.i_enter(String)"
-});
-formatter.result({
-  "duration": 133401482300,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.blazedemo.blazedemo.stepdefs.flightBookings.i_enter(flightBookings.java:19)\r\n\tat ✽.Then I enter \u003c\"name\"\u003e(003flightBooking.feature:7)\r\n",
-  "status": "pending"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "address",
-      "offset": 8
-    }
-  ],
-  "location": "flightBookings.enter(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "city",
+      "val": "sherlock",
       "offset": 14
     }
   ],
-  "location": "flightBookings.i_enter_the(String)"
+  "location": "destinationSelection.i_enter_name(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5152321400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "state",
-      "offset": 13
+      "val": "new york street",
+      "offset": 15
     }
   ],
-  "location": "flightBookings.i_enter_th(String)"
+  "location": "destinationSelection.enter_address(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5154720800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "zipcode",
+      "val": "new york",
       "offset": 18
     }
   ],
-  "location": "flightBookings.enter_the_field(String)"
+  "location": "destinationSelection.i_enter_the_city(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2133166300,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "CardType",
+      "val": "new york",
       "offset": 19
     }
   ],
-  "location": "flightBookings.i_enter_the_card(String)"
+  "location": "destinationSelection.i_enter_the_state(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2120446100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "creditcardnumber",
+      "val": "12345",
+      "offset": 19
+    }
+  ],
+  "location": "destinationSelection.enter_the_zipcode(String)"
+});
+formatter.result({
+  "duration": 2096043000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Visa",
+      "offset": 22
+    }
+  ],
+  "location": "destinationSelection.i_enter_the_cardtype(String)"
+});
+formatter.result({
+  "duration": 173999000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "54321",
+      "offset": 26
+    }
+  ],
+  "location": "destinationSelection.i_enter_the_creditcardno(String)"
+});
+formatter.result({
+  "duration": 2080903500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "09",
+      "offset": 19
+    }
+  ],
+  "location": "destinationSelection.i_enter_the_month(String)"
+});
+formatter.result({
+  "duration": 2078011700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "2021",
+      "offset": 18
+    }
+  ],
+  "location": "destinationSelection.i_enter_the_year(String)"
+});
+formatter.result({
+  "duration": 2097226700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sherlockhome",
       "offset": 20
     }
   ],
-  "location": "flightBookings.i_enter_the_credit(String)"
+  "location": "destinationSelection.i_enter_nameoncard(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2130966000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "month",
+      "val": "Yes",
       "offset": 19
     }
   ],
-  "location": "flightBookings.i_enter_the_month(String)"
+  "location": "destinationSelection.i_check_rememberme(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6023560100,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "year",
-      "offset": 19
-    }
-  ],
-  "location": "flightBookings.i_enter_the_year(String)"
+  "location": "destinationSelection.i_Book_Flight()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 30081979600,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform\u003dWindows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 12 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027DESKTOP-0I2DGSC\u0027, ip: \u0027192.168.31.189\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir\u003dC:\\Users\\ADVANT~1\\AppData\\Local\\Temp\\scoped_dir22548_25721}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d85.0.4183.83, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore}]\nSession ID: 042ffc2678be8861bad0930725ad7c81\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\r\n\tat com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Book_Flight(destinationSelection.java:261)\r\n\tat ✽.Then I Book Flight(001destinationSelection.feature:22)\r\n",
+  "status": "failed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "nameoncard",
-      "offset": 21
-    }
-  ],
-  "location": "flightBookings.i_enter_nameoncard(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "RememberMe",
-      "offset": 11
-    }
-  ],
-  "location": "flightBookings.i_select(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "flightBookings.i_Book_the_Flight()"
-});
-formatter.result({
-  "status": "skipped"
-});
+formatter.write("URL at failure: https://blazedemo.com/purchase.php");
 formatter.after({
-  "duration": 217400,
+  "duration": 2031057300,
   "status": "passed"
 });
 });

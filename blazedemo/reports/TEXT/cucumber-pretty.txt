@@ -1,71 +1,65 @@
 Feature: To verify Finding flights based on departure and destination selection
 
   #Test case 1-2
-  Scenario Outline: verifying flights details display         [90m# 001destinationSelection.feature:4[0m
+  Scenario Outline: verifying flights details display               [90m# 001destinationSelection.feature:4[0m
     [36mGiven [0m[36mApplication url[0m
-    [36mThen [0m[36mI Enter the "<departure_city>"[0m
-    [36mThen [0m[36mEnter the "<destination_city>"[0m
-    [36mThen [0m[36mI click on Find Flights and Verify flights displayed[0m
+    [36mThen [0m[36mI Enter the departure city "<departure_city>"[0m
+    [36mThen [0m[36mEnter the destination city "<destination_city>"[0m
+    [36mThen [0m[36mI click on Find Flight button and Verify flights displayed[0m
+    [36mThen [0m[36mI Select the Flight for from to To[0m
+    [36mThen [0m[36mI enter name "<name>"[0m
+    [36mThen [0m[36menter address "<address>"[0m
+    [36mThen [0m[36mI enter the city "<city>"[0m
+    [36mThen [0m[36mI enter the state "<state>"[0m
+    [36mThen [0m[36menter the zipcode "<zipcode>"[0m
+    [36mThen [0m[36mI enter the cardtype "<CardType>"[0m
+    [36mThen [0m[36mI enter the creditcardno "<creditcardnumber>"[0m
+    [36mThen [0m[36mI enter the month "<month>"[0m
+    [36mThen [0m[36mI enter the year "<year>"[0m
+    [36mThen [0m[36mI enter nameoncard "<nameoncard>"[0m
+    [36mThen [0m[36mI check rememberme"<RememberMe>"[0m
+    [36mThen [0m[36mI Book Flight[0m
 
     Examples: 
+[34mURL at failure: https://blazedemo.com/purchase.php[0m
 
-  Scenario Outline: verifying flights details display         [90m# 001destinationSelection.feature:13[0m
-    [32mGiven [0m[32mApplication url[0m                                     [90m# destinationSelection.application_url()[0m
-    [33mThen [0m[33mI Enter the "[0m[33m[1mParis[0m[33m"[0m                                  [90m# destinationSelection.i_Enter_the(String)[0m
-      [31mcucumber.api.PendingException: TODO: implement me
-      	at com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Enter_the(destinationSelection.java:40)
-      	at ✽.Then I Enter the "Paris"(001destinationSelection.feature:7)
+  Scenario Outline: verifying flights details display               [90m# 001destinationSelection.feature:26[0m
+    [32mGiven [0m[32mApplication url[0m                                           [90m# destinationSelection.application_url()[0m
+    [32mThen [0m[32mI Enter the departure city "[0m[32m[1mParis[0m[32m"[0m                         [90m# destinationSelection.i_Enter_the_departure_city(String)[0m
+    [32mThen [0m[32mEnter the destination city "[0m[32m[1mNew York[0m[32m"[0m                      [90m# destinationSelection.enter_the_destination_city(String)[0m
+    [32mThen [0m[32mI click on Find Flight button and Verify flights displayed[0m [90m# destinationSelection.i_click_on_Find_Flight_button_and_Verify_flights_displayed()[0m
+    [32mThen [0m[32mI Select the Flight for from to To[0m                         [90m# destinationSelection.i_Select_the_Flight_for_from_to_To()[0m
+    [32mThen [0m[32mI enter name "[0m[32m[1msherlock[0m[32m"[0m                                    [90m# destinationSelection.i_enter_name(String)[0m
+    [32mThen [0m[32menter address "[0m[32m[1mnew york street[0m[32m"[0m                            [90m# destinationSelection.enter_address(String)[0m
+    [32mThen [0m[32mI enter the city "[0m[32m[1mnew york[0m[32m"[0m                                [90m# destinationSelection.i_enter_the_city(String)[0m
+    [32mThen [0m[32mI enter the state "[0m[32m[1mnew york[0m[32m"[0m                               [90m# destinationSelection.i_enter_the_state(String)[0m
+    [32mThen [0m[32menter the zipcode "[0m[32m[1m12345[0m[32m"[0m                                  [90m# destinationSelection.enter_the_zipcode(String)[0m
+    [32mThen [0m[32mI enter the cardtype "[0m[32m[1mVisa[0m[32m"[0m                                [90m# destinationSelection.i_enter_the_cardtype(String)[0m
+    [32mThen [0m[32mI enter the creditcardno "[0m[32m[1m54321[0m[32m"[0m                           [90m# destinationSelection.i_enter_the_creditcardno(String)[0m
+    [32mThen [0m[32mI enter the month "[0m[32m[1m09[0m[32m"[0m                                     [90m# destinationSelection.i_enter_the_month(String)[0m
+    [32mThen [0m[32mI enter the year "[0m[32m[1m2021[0m[32m"[0m                                    [90m# destinationSelection.i_enter_the_year(String)[0m
+    [32mThen [0m[32mI enter nameoncard "[0m[32m[1mSherlockhome[0m[32m"[0m                          [90m# destinationSelection.i_enter_nameoncard(String)[0m
+    [32mThen [0m[32mI check rememberme"[0m[32m[1mYes[0m[32m"[0m                                    [90m# destinationSelection.i_check_rememberme(String)[0m
+    [31mThen [0m[31mI Book Flight[0m                                              [90m# destinationSelection.i_Book_Flight()[0m
+      [31morg.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+        (Session info: chrome=85.0.4183.83)
+        (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 12 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+      Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+      System info: host: 'DESKTOP-0I2DGSC', ip: '192.168.31.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\ADVANT~1\AppData\Local\Temp\scoped_dir22548_25721}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.83, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+      Session ID: 042ffc2678be8861bad0930725ad7c81
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+      	at com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Book_Flight(destinationSelection.java:261)
+      	at ✽.Then I Book Flight(001destinationSelection.feature:22)
       [0m
-    [36mThen [0m[36mEnter the "[0m[36m[1mNew York[0m[36m"[0m                                 [90m# destinationSelection.enter_the(String)[0m
-    [36mThen [0m[36mI click on Find Flights and Verify flights displayed[0m [90m# destinationSelection.i_click_on_Find_Flights()[0m
-Feature: To verify Selection of flight based on available flights
-
-  #Test case 3-4
-  Scenario Outline: verifying selected flight [90m# 002flightSelection.feature:4[0m
-    [36mThen [0m[36mI Select the Flight[0m
-
-    Examples: 
-[34mURL at failure: data:,[0m
-
-  Scenario Outline: verifying selected flight [90m# 002flightSelection.feature:12[0m
-    [31mThen [0m[31mI Select the Flight[0m                  [90m# flightSelection.i_Select_the_Flight()[0m
-      [31mjava.lang.NullPointerException
-      	at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)
-      	at ✽.Then I Select the Flight(002flightSelection.feature:7)
-      [0m
-Feature: To verify flight booking
-
-  #Test case 5-6
-  Scenario Outline: verifying flight booked     [90m# 003flightBooking.feature:4[0m
-    [36mThen [0m[36mI enter <"name">[0m
-    [36mThen [0m[36menter <"address">[0m
-    [36mThen [0m[36mI enter the <"city">[0m
-    [36mThen [0m[36mI enter th <"state">[0m
-    [36mThen [0m[36menter the field <"zipcode">[0m
-    [36mThen [0m[36mI enter the card <"CardType">[0m
-    [36mThen [0m[36mI enter the credit<"creditcardnumber">[0m
-    [36mThen [0m[36mI enter the month<"month">[0m
-    [36mThen [0m[36mI enter the year <"year">[0m
-    [36mThen [0m[36mI enter nameoncard <"nameoncard">[0m
-    [36mThen [0m[36mI select <"RememberMe">[0m
-    [36mThen [0m[36mI Book the Flight[0m
-
-    Examples: 
-
-  Scenario Outline: verifying flight booked     [90m# 003flightBooking.feature:21[0m
-    [33mThen [0m[33mI enter <"[0m[33m[1mname[0m[33m">[0m                       [90m# flightBookings.i_enter(String)[0m
-      [31mcucumber.api.PendingException: TODO: implement me
-      	at com.blazedemo.blazedemo.stepdefs.flightBookings.i_enter(flightBookings.java:19)
-      	at ✽.Then I enter <"name">(003flightBooking.feature:7)
-      [0m
-    [36mThen [0m[36menter <"[0m[36m[1maddress[0m[36m">[0m                      [90m# flightBookings.enter(String)[0m
-    [36mThen [0m[36mI enter the <"[0m[36m[1mcity[0m[36m">[0m                   [90m# flightBookings.i_enter_the(String)[0m
-    [36mThen [0m[36mI enter th <"[0m[36m[1mstate[0m[36m">[0m                   [90m# flightBookings.i_enter_th(String)[0m
-    [36mThen [0m[36menter the field <"[0m[36m[1mzipcode[0m[36m">[0m            [90m# flightBookings.enter_the_field(String)[0m
-    [36mThen [0m[36mI enter the card <"[0m[36m[1mCardType[0m[36m">[0m          [90m# flightBookings.i_enter_the_card(String)[0m
-    [36mThen [0m[36mI enter the credit<"[0m[36m[1mcreditcardnumber[0m[36m">[0m [90m# flightBookings.i_enter_the_credit(String)[0m
-    [36mThen [0m[36mI enter the month<"[0m[36m[1mmonth[0m[36m">[0m             [90m# flightBookings.i_enter_the_month(String)[0m
-    [36mThen [0m[36mI enter the year <"[0m[36m[1myear[0m[36m">[0m              [90m# flightBookings.i_enter_the_year(String)[0m
-    [36mThen [0m[36mI enter nameoncard <"[0m[36m[1mnameoncard[0m[36m">[0m      [90m# flightBookings.i_enter_nameoncard(String)[0m
-    [36mThen [0m[36mI select <"[0m[36m[1mRememberMe[0m[36m">[0m                [90m# flightBookings.i_select(String)[0m
-    [36mThen [0m[36mI Book the Flight[0m                      [90m# flightBookings.i_Book_the_Flight()[0m

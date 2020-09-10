@@ -1,17 +1,287 @@
 [
   {
+    "source": "^I enter the state \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the state \"new york\"",
+        "aggregatedDurations": {
+          "average": 2.1204461,
+          "median": 2.1204461
+        },
+        "durations": [
+          {
+            "duration": 2.1204461,
+            "location": "001destinationSelection.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter nameoncard \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter nameoncard \"Sherlockhome\"",
+        "aggregatedDurations": {
+          "average": 2.130966,
+          "median": 2.130966
+        },
+        "durations": [
+          {
+            "duration": 2.130966,
+            "location": "001destinationSelection.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the city \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the city \"new york\"",
+        "aggregatedDurations": {
+          "average": 2.1331663,
+          "median": 2.1331663
+        },
+        "durations": [
+          {
+            "duration": 2.1331663,
+            "location": "001destinationSelection.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the creditcardno \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the creditcardno \"54321\"",
+        "aggregatedDurations": {
+          "average": 2.0809035,
+          "median": 2.0809035
+        },
+        "durations": [
+          {
+            "duration": 2.0809035,
+            "location": "001destinationSelection.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the year \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the year \"2021\"",
+        "aggregatedDurations": {
+          "average": 2.0972267,
+          "median": 2.0972267
+        },
+        "durations": [
+          {
+            "duration": 2.0972267,
+            "location": "001destinationSelection.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter name \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter name \"sherlock\"",
+        "aggregatedDurations": {
+          "average": 5.1523214,
+          "median": 5.1523214
+        },
+        "durations": [
+          {
+            "duration": 5.1523214,
+            "location": "001destinationSelection.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Enter the destination city \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Enter the destination city \"New York\"",
+        "aggregatedDurations": {
+          "average": 0.1202378,
+          "median": 0.1202378
+        },
+        "durations": [
+          {
+            "duration": 0.1202378,
+            "location": "001destinationSelection.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on Find Flight button and Verify flights displayed$",
+    "steps": [
+      {
+        "name": "I click on Find Flight button and Verify flights displayed",
+        "aggregatedDurations": {
+          "average": 1.0300719,
+          "median": 1.0300719
+        },
+        "durations": [
+          {
+            "duration": 1.0300719,
+            "location": "001destinationSelection.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I Select the Flight for from to To$",
+    "steps": [
+      {
+        "name": "I Select the Flight for from to To",
+        "aggregatedDurations": {
+          "average": 2.7246059,
+          "median": 2.7246059
+        },
+        "durations": [
+          {
+            "duration": 2.7246059,
+            "location": "001destinationSelection.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I Enter the departure city \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I Enter the departure city \"Paris\"",
+        "aggregatedDurations": {
+          "average": 0.1482907,
+          "median": 0.1482907
+        },
+        "durations": [
+          {
+            "duration": 0.1482907,
+            "location": "001destinationSelection.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the cardtype \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the cardtype \"Visa\"",
+        "aggregatedDurations": {
+          "average": 0.173999,
+          "median": 0.173999
+        },
+        "durations": [
+          {
+            "duration": 0.173999,
+            "location": "001destinationSelection.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the month \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter the month \"09\"",
+        "aggregatedDurations": {
+          "average": 2.0780117,
+          "median": 2.0780117
+        },
+        "durations": [
+          {
+            "duration": 2.0780117,
+            "location": "001destinationSelection.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "source": "^Application url$",
     "steps": [
       {
         "name": "Application url",
         "aggregatedDurations": {
-          "average": 23.577861,
-          "median": 23.577861
+          "average": 28.5516433,
+          "median": 28.5516433
         },
         "durations": [
           {
-            "duration": 23.577861,
+            "duration": 28.5516433,
             "location": "001destinationSelection.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enter the zipcode \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "enter the zipcode \"12345\"",
+        "aggregatedDurations": {
+          "average": 2.096043,
+          "median": 2.096043
+        },
+        "durations": [
+          {
+            "duration": 2.096043,
+            "location": "001destinationSelection.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enter address \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "enter address \"new york street\"",
+        "aggregatedDurations": {
+          "average": 5.1547208,
+          "median": 5.1547208
+        },
+        "durations": [
+          {
+            "duration": 5.1547208,
+            "location": "001destinationSelection.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I check rememberme\"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I check rememberme\"Yes\"",
+        "aggregatedDurations": {
+          "average": 6.0235601,
+          "median": 6.0235601
+        },
+        "durations": [
+          {
+            "duration": 6.0235601,
+            "location": "001destinationSelection.feature:21"
           }
         ]
       }

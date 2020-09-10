@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
-//import cucumber.api.junit.Cucumber;
+
 
 @RunWith(ExtendedCucumber.class)
 @ExtendedCucumberOptions(
@@ -24,7 +24,7 @@ plugin = {
 		"junit:reports/JUNIT/cucumber-results.xml"},
 
 
-		features = { "src/test/resources/Featurefile"},
+		features = { "src/test/resources/Featurefile/"},
          glue = { "com.blazedemo.blazedemo.stepdefs" })
 
 

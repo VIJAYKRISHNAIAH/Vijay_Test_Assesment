@@ -1,33 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="3" time="241.832901">
-<testcase classname="To verify Finding flights based on departure and destination selection" name="verifying flights details display" time="100.890791">
-<skipped><![CDATA[Given Application url.......................................................passed
-Then I Enter the "Paris"....................................................pending
-Then Enter the "New York"...................................................skipped
-Then I click on Find Flights and Verify flights displayed...................skipped
-]]></skipped>
-</testcase>
-<testcase classname="To verify Selection of flight based on available flights" name="verifying selected flight" time="7.52319">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)&#13;&#10;&#9;at ✽.Then I Select the Flight(002flightSelection.feature:7)&#13;&#10;"><![CDATA[Then I Select the Flight....................................................failed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="96.084939">
+<testcase classname="To verify Finding flights based on departure and destination selection" name="verifying flights details display" time="96.084939">
+<failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=85.0.4183.83)&#10;  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 12 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'DESKTOP-0I2DGSC', ip: '192.168.31.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\ADVANT~1\AppData\Local\Temp\scoped_dir22548_25721}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.83, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]&#10;Session ID: 042ffc2678be8861bad0930725ad7c81&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)&#13;&#10;&#9;at com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Book_Flight(destinationSelection.java:261)&#13;&#10;&#9;at ✽.Then I Book Flight(001destinationSelection.feature:22)&#13;&#10;"><![CDATA[Given Application url.......................................................passed
+Then I Enter the departure city "Paris".....................................passed
+Then Enter the destination city "New York"..................................passed
+Then I click on Find Flight button and Verify flights displayed.............passed
+Then I Select the Flight for from to To.....................................passed
+Then I enter name "sherlock"................................................passed
+Then enter address "new york street"........................................passed
+Then I enter the city "new york"............................................passed
+Then I enter the state "new york"...........................................passed
+Then enter the zipcode "12345"..............................................passed
+Then I enter the cardtype "Visa"............................................passed
+Then I enter the creditcardno "54321".......................................passed
+Then I enter the month "09".................................................passed
+Then I enter the year "2021"................................................passed
+Then I enter nameoncard "Sherlockhome"......................................passed
+Then I check rememberme"Yes"................................................passed
+Then I Book Flight..........................................................failed
 
 StackTrace:
-java.lang.NullPointerException
-	at com.blazedemo.blazedemo.stepdefs.flightSelection.i_Select_the_Flight(flightSelection.java:11)
-	at ✽.Then I Select the Flight(002flightSelection.feature:7)
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=85.0.4183.83)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-0I2DGSC', ip: '192.168.31.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\ADVANT~1\AppData\Local\Temp\scoped_dir22548_25721}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.83, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 042ffc2678be8861bad0930725ad7c81
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at com.blazedemo.blazedemo.stepdefs.destinationSelection.i_Book_Flight(destinationSelection.java:261)
+	at ✽.Then I Book Flight(001destinationSelection.feature:22)
 ]]></failure>
-</testcase>
-<testcase classname="To verify flight booking" name="verifying flight booked" time="133.41892">
-<skipped><![CDATA[Then I enter <"name">.......................................................pending
-Then enter <"address">......................................................skipped
-Then I enter the <"city">...................................................skipped
-Then I enter th <"state">...................................................skipped
-Then enter the field <"zipcode">............................................skipped
-Then I enter the card <"CardType">..........................................skipped
-Then I enter the credit<"creditcardnumber">.................................skipped
-Then I enter the month<"month">.............................................skipped
-Then I enter the year <"year">..............................................skipped
-Then I enter nameoncard <"nameoncard">......................................skipped
-Then I select <"RememberMe">................................................skipped
-Then I Book the Flight......................................................skipped
-]]></skipped>
 </testcase>
 </testsuite>
